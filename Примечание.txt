@@ -1,0 +1,31 @@
+парт2 урок 5
+slugable скачали с композером
+ћогли без него сделать униальные слаги через мутаторы, и там дела€ проверки. —лаг должен быть нижнего регистра и без пробелов
+
+lesson 6
+php artisan migrate:refresh 
+перемигрировать. ≈сли в таблице нет данных
+
+урок 7
+—оздание класса дл€ валидации дл€ определЄнной модели (форм класс)
+php artisan make:request StoreCategory
+
+ѕри изменении чего то, лучше не мен€ть слаг так как он обычно работает при создании урл, поэтому лучше не трогать. ≈сли хочешь трогать, то категори€ вызвать, слаг приравн€ть нулю, и при сохрании создатьс€ слаг
+
+soft deleteing помещаем в корзину. ћ€гко удалЄнна€ модель
+с миграцией что то делать
+
+урок 9
+ƒелать валидацию со стороны клиентов. required ставить на input and email
+
+lesson 10
+filesystem.php 
+16
+53
+изменил так чтобы сохран€лось в publick а не storage
+
+многое ко многим sync сохранение, хорош потому что, он делает проверки. ≈сли к посту есть теги, то он удал€ет их потом присваивает новые
+
+14 lesson
+composer update --ignore-platform-reqs
+ckeditor ckfinder error Fatal error: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.2.34. in C:\OpenServer\domains\laravel.prac\public\assets\admin\ckfinder\core\connector\php\vendor\composer\platform_check.php on line 24
