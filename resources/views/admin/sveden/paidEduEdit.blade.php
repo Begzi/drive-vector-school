@@ -32,7 +32,7 @@
                                 <div class="form-group">
                                     <label for="text">Первый абзац, написать какие требования к автошколам есть (eduFedDoc)<font color="f33810">*</font></label>
                                     <textarea  type="textarea" name="text"
-                                           class="form-control" id="text" style="height: 170px"
+                                           class="form-control" id="content" style="height: 170px"
                                            > 
                                            {{ $paidEdu->text }}
                                        </textarea>

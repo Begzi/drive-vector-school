@@ -300,7 +300,7 @@ template {
     display: none;
   }
   .badge {
-    border: 1px solid #000;
+    border: 1px solid #fff;
   }
   .table {
     border-collapse: collapse !important;
@@ -3835,7 +3835,7 @@ tbody.collapse.show {
 }
 
 .nav-link.disabled {
-  color: #636c72;
+  color: #fff;
   cursor: not-allowed;
 }
 
@@ -3854,11 +3854,11 @@ tbody.collapse.show {
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-  border-color: #eceeef #eceeef #ddd;
+  border-color: #fff;
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #636c72;
+  color: #fff;
   background-color: transparent;
   border-color: transparent;
 }
@@ -3867,7 +3867,7 @@ tbody.collapse.show {
 .nav-tabs .nav-item.show .nav-link {
   color: #464a4c;
   background-color: #fff;
-  border-color: #ddd #ddd #fff;
+  border-color: #fff;
 }
 
 .nav-tabs .dropdown-menu {
@@ -3882,9 +3882,9 @@ tbody.collapse.show {
 
 .nav-pills .nav-link.active,
 .nav-pills .nav-item.show .nav-link {
-  color: #fff;
+  color: #000;
   cursor: default;
-  background-color: #0275d8;
+  background-color: #fff;
 }
 
 .nav-fill .nav-item {
@@ -12811,7 +12811,7 @@ a:focus,
 .search-form .btn:focus,
 .search-form .btn {
     color: #ffffff !important;
-    background-color: #3197d6 !important;
+    background-color: #000 !important;
 }
 
 .tag-cloud-single span,
@@ -12821,15 +12821,15 @@ a:focus,
 .btn:focus,
 .navbar-inverse .navbar-toggler {
     color: #ffffff !important;
-    background-color: #3197d6;
+    background-color: #000;
 }
 
 .blockquote {
-    border-left-color: #3197d6;
+    border-left-color: #fff;
 }
 
 .footer .widget-title {
-    border-color: #3197d6;
+    border-color: #fff;
 }
 
 
@@ -12839,32 +12839,32 @@ a:focus,
 .navbar-nav .nav-link.active.color-pink-hover,
 .navbar-nav .nav-link.color-pink-hover:hover,
 .navbar-nav .nav-link.color-pink-hover:focus {
-    color: #deacca !important;
+    color: #fff !important;
 }
 
 .page-title .bg-pink,
 .portfolio .blog-meta span.bg-pink,
 .masonry-box:hover .blog-meta span.bg-pink,
 .color-pink a {
-    background-color: #deacca !important;
+    background-color: #fff !important;
 }
 
 .navbar-nav .nav-link.active.color-aqua-hover,
 .navbar-nav .nav-link.color-aqua-hover:hover,
 .navbar-nav .nav-link.color-aqua-hover:focus {
-    color: #2ad2c9 !important;
+    color: #fff !important;
 }
 
 .page-title .bg-aqua,
 .masonry-box:hover .blog-meta span.bg-aqua,
 .color-aqua a {
-    background-color: #2ad2c9 !important;
+    background-color: #fff !important;
 }
 
 .navbar-nav .nav-link.active.color-green-hover,
 .navbar-nav .nav-link.color-green-hover:hover,
 .navbar-nav .nav-link.color-green-hover:focus {
-    color: #34bf49 !important;
+    color: #fff !important;
 }
 
 .page-title .bg-green,
@@ -12876,7 +12876,7 @@ a:focus,
 .navbar-nav .nav-link.active.color-red-hover,
 .navbar-nav .nav-link.color-red-hover:hover,
 .navbar-nav .nav-link.color-red-hover:focus {
-    color: #ed1b2e !important;
+    color: #fff !important;
 }
 
 .page-title .bg-red,
@@ -12888,7 +12888,7 @@ a:focus,
 .navbar-nav .nav-link.active.color-yellow-hover,
 .navbar-nav .nav-link.color-yellow-hover:hover,
 .navbar-nav .nav-link.color-yellow-hover:focus {
-    color: #ffb900 !important;
+    color: #fff !important;
 }
 
 .page-title .bg-yellow,
@@ -12900,7 +12900,7 @@ a:focus,
 .navbar-nav .nav-link.active.color-grey-hover,
 .navbar-nav .nav-link.color-grey-hover:hover,
 .navbar-nav .nav-link.color-grey-hover:focus {
-    color: #6f1683 !important;
+    color: #fff !important;
 }
 
 .portfolio .blog-meta span.bg-grey,
@@ -13046,15 +13046,9 @@ h6 {
     background-color: #f1f1f1;
 }
 
-:root {
-  /* :root is a clever way of saying "the outer-most element" */
-  
-  --navbar-color: #f9ca27; /* the default f9ca27 */
-  --header-img: url(../images/header.png); /* the default f9ca27 */
-}
 #cta {
     margin-top: 4rem;
-    background: rgba(0, 0, 0, 0) var(--header-img) no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url(../images/header.png) no-repeat scroll center center / cover;
     padding: 8rem 0;
     position: relative;
 }
@@ -13297,6 +13291,11 @@ h6 {
         padding: 1rem 0.6rem;
     }
 }
+:root {
+  /* :root is a clever way of saying "the outer-most element" */
+  
+  --footer-color: #ff4545; /* the default */
+}
 
 a:hover,
 a:focus,
@@ -13304,12 +13303,12 @@ a:focus,
 .fa-star,
 .pp a,
 .blog-list-widget small {
-    color: var(--navbar-color) !important;
+    color: #fff !important;
 }
 
 .market-header .navbar,
 .newsletter-widget.text-center {
-    border-color: var(--navbar-color) !important;
+    border-color: #fff;
 }
 
 .color-yellow a,
@@ -13321,9 +13320,5 @@ a:focus,
 .dropdown-item:hover,
 .bg-inverse {
     color: #111111 !important;
-    background-color: var(--navbar-color) !important;
-}
-
-.text {
-  color: black;
+    background-color: #fff !important;
 }

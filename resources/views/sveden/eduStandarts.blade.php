@@ -8,17 +8,17 @@
 				<table class="table"><caption></caption>
 
 	                <div class="container-fluid">
-	                	<div class="row" itemprop="eduFedDoc">
-							<p>{!! preg_replace( "#\r?\n#", "<br>", $eduStandart->text ) !!}</p>
+	                	<div class="text" itemprop="eduFedDoc">
+							<p>{!! $eduStandart->text !!}</p>
 	                    </div>
-	                	<div class="row" itemprop="eduStandartDoc">
-							<p><b>{!! preg_replace( "#\r?\n#", "<br>", $eduStandart->link_requirements ) !!}</b></p>
+
+	                	<div class="text" itemprop="eduStandartDoc">
+							{!! $eduStandart->link_requirements !!}
 	                    </div>
 	                </div>
 				</table>
         </div>
     </div>
-
 	    <hr class="invis">
 
 

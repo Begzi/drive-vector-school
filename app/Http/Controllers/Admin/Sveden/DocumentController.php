@@ -54,7 +54,7 @@ class DocumentController extends Controller
             'Добавленная учебная программа категории "В"'
         ];
 
-    public function document()
+    public function index()
     {
     	$documents = Document::get();
     	$arrayNameDocument = $this->arrayNameDocument;
@@ -63,7 +63,7 @@ class DocumentController extends Controller
         return view('admin.sveden.document', compact('documents', 'arrayNameDocument', 
                 'arrayNameLabel', 'arrayNameLabelAddedDocument'));
     }
-    public function documentEdit($id)
+    public function edit($id)
     {
         $document = Document::find($id);
     	$arrayNameDocument = $this->arrayNameDocument;
@@ -73,7 +73,7 @@ class DocumentController extends Controller
             compact('document', 'arrayNameDocument', 
                 'arrayNameLabel', 'arrayNameLabelAddedDocument'));
     }
-    public function documentUpdate(Request $request, $id)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'ustavDocLink' => 'nullable|mimes:pdf',
@@ -102,7 +102,7 @@ class DocumentController extends Controller
 
         return redirect()->route('admin.sveden.document')->with('success', 'Изменения сохранены');
     }
-    public function documentEditPaidEdu($id)
+    public function editPaidEdu($id)
     {
         $document = Document::find($id);
         $arrayNameDocument = [
@@ -121,7 +121,7 @@ class DocumentController extends Controller
             compact('document', 'arrayNameDocument', 
                 'arrayNameLabel', 'arrayNameLabelAddedDocument'));
     }
-    public function documentUpdatePaidEdu(Request $request, $id)
+    public function updatePaidEdu(Request $request, $id)
     {
         $request->validate([
             'paidEduDocLink' => 'nullable|mimes:pdf',

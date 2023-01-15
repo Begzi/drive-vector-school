@@ -104,3 +104,30 @@ function openCategory(evt, catName) {
     document.getElementById(catName).style.display = "block";
     evt.currentTarget.className += " active";
 } 
+
+document.querySelector('#eye-btn').addEventListener('click', function(){
+	let navbarEye = document.querySelector('.navbar')
+	if ((navbarEye !=null)){
+		navbarEye.style.setProperty('--navbar-color', '#fff')
+	}
+	let dmtopEye = document.querySelector('.dmtop')	
+	if ((dmtopEye !=null)){
+		dmtopEye.style.setProperty('--navbar-color', '#fff')
+	}
+
+	
+	let newsletterEye = document.querySelector('.newsletter-widget')
+	if ((newsletterEye !=null)){
+		newsletterEye.style.setProperty('--navbar-color', '#fff')
+	}
+
+	let ctaEye = document.querySelector('#cta')
+	if ((ctaEye !=null)){
+		ctaEye.style.setProperty('--header-img', 'url(../images/header-eye.png)')
+	}
+
+	let allTh = document.querySelectorAll('th')
+	if ((allTh.length > 0)){
+		allTh.forEach(element => element.style.backgroundColor = '#fff')
+	}
+})

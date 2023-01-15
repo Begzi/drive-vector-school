@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>   
             </button>
             <a class="navbar-brand" href="#"><img style="height: 50px" src="/assets/front/images/version/market-logo.png" alt=""></a>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -24,6 +24,7 @@
                     </li>
                 </ul>
             </div>
+            <a class="navbar-brand" id='eye-btn' href="#"><img style="height: 50px" src="/assets/front/images/version/eye.png" alt=""></a>
             <div>
             </div>
         </nav>

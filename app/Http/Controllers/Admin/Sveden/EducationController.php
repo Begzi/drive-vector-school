@@ -20,14 +20,14 @@ class EducationController extends Controller
             'Добавленная лицензия на осуществление образовательной деятельности (с приложениями) (СканФайла, в pdf)',
             'Добавленная практические навыки (СканФайла, в pdf)',
         ];
-    public function education()
+    public function index()
     {
     	$educations = Education::get();
     	$arrayNameDocument = $this->arrayNameDocument;
     	$arrayNameLabel = $this->arrayNameLabel;
         return view('admin.sveden.education', compact('educations', 'arrayNameDocument', 'arrayNameLabel'));
     }
-    public function educationEdit($id)
+    public function edit($id)
     {
     	$education = Education::find($id);
     	$arrayNameDocument = $this->arrayNameDocument;
@@ -35,7 +35,7 @@ class EducationController extends Controller
     	$arrayNameLabelAddedDocument = $this->arrayNameLabelAddedDocument;
         return view('admin.sveden.educationEdit', compact('education', 'arrayNameDocument', 'arrayNameLabel','arrayNameLabelAddedDocument'));
     }
-    public function educationUpdate(Request $request, $id)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'education_lvl' => 'required',

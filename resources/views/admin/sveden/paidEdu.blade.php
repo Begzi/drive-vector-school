@@ -32,8 +32,8 @@
 		                                                <i class="fas fa-pencil-alt"></i>
 		                                            </a>
 		                                        </div>
-	                                        	<div class="row" itemprop="eduFedDoc">
-													<p>{!! preg_replace( "#\r?\n#", "<br>", $paidEdu->text ) !!}</p>
+	                                        	<div class="text" itemprop="eduFedDoc">
+													{!! $paidEdu->text  !!}
 		                                        </div>
 
                                             <div class="row" >

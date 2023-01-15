@@ -31,20 +31,19 @@
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="text">Первый абзац, написать какие требования к автошколам есть (eduFedDoc)<font color="f33810">*</font></label>
-                                    <textarea  type="textarea" name="text"
-                                           class="form-control" id="text" style="height: 120px"
+                                    <textarea  name="text"
+                                           class="form-control" id="content" rows="7" placeholder="Текст требования ..."
                                            > 
                                            {{ $eduStandarts->text }}
                                        </textarea>
                                 </div>
+
                                 <div class="form-group">
-                                    <label for="link_requirements">Ссыдки на эти требования, каждая ссылка на новом абзаце (eduStandartDoc<font color="f33810">*</font></label>
-                                    <textarea  type="textarea" name="link_requirements"
-                                           class="form-control" id="link_requirements"  style="height: 100px"
-                                           > 
-                                           	{{ $eduStandarts->link_requirements }}
-                                           </textarea>
+                                    <label for="content">Ссыдки на эти требования, каждая ссылка на новом абзаце (eduStandartDoc)<font color="f33810">*</font></label>
+                                    <textarea name="link_requirements" class="form-control" id="description" rows="7"
+                                              placeholder="Введите ссылки ..." >{{ $eduStandarts->link_requirements }}</textarea>
                                 </div>
+
                             </div>
                             <!-- /.card-body -->
 

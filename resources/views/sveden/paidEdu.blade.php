@@ -7,9 +7,10 @@
         	<br><br><h3>Платные образовательные услуги</h3>
 				<table class="table"><caption></caption>
                     <div class="container-fluid">
-                    	<div class="row" itemprop="eduFedDoc">
-							<p>{!! preg_replace( "#\r?\n#", "<br>", $paidEdu->text ) !!}</p>
+                    	<div class="text" itemprop="eduFedDoc">
+							{!! $paidEdu->text  !!}
                         </div>
+                       
 						<tr>
 							<th width="50%" style="background-color: #5F8A96; color: black" >Документ о порядке оказания платных образовательных услуг</th>
 							<th width="50%"  style="color: black" itemprop="paidEdu">
